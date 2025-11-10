@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    :root {
+        --color-primary: 0deg 0% 14%;
+        --color-secondary: 0deg 0% 18%;
+        --color-accent: 3deg 74% 65%;
+        --color-text: 0deg 0% 100%;
+    }
+}
+
+@layer components {
+    .nav {
+        @apply flex flex-col gap-6 rounded top-0 right-0 bg-accent/40 backdrop-blur-lg p-24 z-20 scale-y-100
+            origin-bottom transition-transform duration-300
+    }
+}
