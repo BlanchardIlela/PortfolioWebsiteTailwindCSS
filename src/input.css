@@ -16,4 +16,10 @@
         @apply flex flex-col gap-6 rounded top-0 right-0 bg-accent/40 backdrop-blur-lg p-24 z-20 scale-y-100
             origin-bottom transition-transform duration-300
     }
+
+    .nav--link {
+        @apply py-2 text-lg relative transition-colors hover:text-secondary before:content-[''] before:absolute
+        before:w-2/4 before:h-px hover:before:origin-left before:bg-secondary before:left-0 before:bottom-0
+        before:scale-x-0 hover:before:scale-x-100 before:origin-right before:transition-transform
+    }
 }
