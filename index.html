@@ -34,47 +34,52 @@
 
             <div class="hamburger sm:hidden"></div>
 
-            <a href="#">Book Now</a>
+            <a class="uppercase border-2 border-accent p-2 rounded text-xs sm:text-base sm:px-4" href="#">Book Now</a>
         </nav>
 
-        <section>
-            <div>
-                <div>
-                    <h6>Professional Photographer</h6>
-                    <h1>John Doe</h1>
+        <section class="flex flex-col gap-10 lg:flex-row lg:*:basis-full lg:gap-x-24 xl:gap-x-24">
+            <div class="flex flex-col gap-y-5 lg:gap-y-12 xl:self-center xl:gap-y-24">
+                <div class="space-y-2 lg:space-y-4">
+                    <h6 class="text-sm pl-6 uppercase relative before before:h-1 before:w-4 before:bg-accent
+                    before:top-2/4 before:-translate-y-2/4 before:left-0 lg:text-lg">Professional Photographer</h6>
+                    <h1 class="text-5xl font-bold lg:text-7xl">John Doe</h1>
                 </div>
 
-                <div>
-                    <ul>
-                        <li>
+                <div class="flex flex-col gap-y-5 lg:gap-y-8 xl:pl-12 xl:relative xl:before:h-full xl:before xl:before:w-5
+                xl:before:top-0 xl:before:left-0">
+                    <ul class="flex gap-5">
+                        <li class="hover:text-accent transition-colors cursor-pointer lg:text-2xl">
                             <i class="fa-brands fa-facebook"></i>
                         </li>
-                        <li>
+                        <li class="hover:text-accent transition-colors cursor-pointer lg:text-2xl">
                             <i class="fa-brands fa-twitter"></i>
                         </li>
-                        <li>
+                        <li class="hover:text-accent transition-colors cursor-pointer lg:text-2xl">
                             <i class="fa-brands fa-dribbble"></i>
                         </li>
-                        <li>
+                        <li class="hover:text-accent transition-colors cursor-pointer lg:text-2xl">
                             <i class="fa-brands fa-youtube"></i>
                         </li>
                     </ul>
 
-                    <p>
+                    <p class="lg:text-lg">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                         Pellentesque sodales at nunc quis semper. Class aptent taciti
                         sociosqu ad litora torquent per conubia nostra, per inceptos
                         himenaeos. Fusce
                     </p>
 
-                    <a href="#">View Portfolio</a>
-
-                    <figure>
-                        <img src="images/showcase.jpg" alt="">
-                    </figure>
+                    <a class="uppercase p-2 border-2 border-accent self-start text-xs rounded sm:text-base
+                    sm:px-4" href="#">View Portfolio</a>
                 </div>
             </div>
-        </section>
+
+            <figure class="lg:max-w-[550px] lg:relative lg:before:absolute lg:before:content-[''] lg:before:border-[20px] 
+            lg:before:rounded lg:before:border-accent lg:before:h-96 lg:before:w-96 lg:before:-top-12 lg:before:-left-12
+            lg:before:-z-10 lg:z-10">
+            <img src="images/showcase.jpg" alt="" />
+            </figure>
+      </section>
     </header>
 
     <!-- ----------JS -->
