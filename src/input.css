@@ -9,6 +9,10 @@
         --color-accent: 3deg 74% 65%;
         --color-text: 0deg 0% 100%;
     }
+
+    img {
+        @apply rounded h-full object-cover
+    }
 }
 
 @layer components {
@@ -36,5 +40,13 @@
 
     .hamburger.close{
         @apply before:rotate-45 before:translate-y-1 after:w-2/3 after:-rotate-45 after:-translate-y-1
+    }
+
+    .before{
+        @apply before:absolute before:content-[''] before:rounded-full before:bg-accent
+    }
+
+    .after{
+        @apply after:absolute after:content-[''] after:rounded-full before:bg-accent
     }
 }
