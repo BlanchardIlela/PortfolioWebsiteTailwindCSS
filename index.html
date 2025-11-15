@@ -260,11 +260,13 @@
         </figure>
       </section>
     <!-- *-*-*-*-*-*-*-*-*-*-*-*-* Portfolio -->
-      <section>
-        <div>
+      <section class="p-6 flex flex-col gap-y-10 bg-primary text-text lg:gap-x-10
+      lg:flex-row-reverse *:basis-full md:p-16">
+        <div class="space-y-5 *:space-y-2 lg:self-center xl:space-y-10">
           <div>
-            <h6>My Portfolio</h6>
-            <h2>Recent Works</h2>
+            <h6 class="text-sm pl-6 uppercase relative before before:h-1 before:w-4 before:bg-accent 
+              before:top-2/4 before:-translate-y-2/4 before:left-0 lg:text-lg">My Portfolio</h6>
+            <h2 class="text-2xl capitalize font-bold lg:text-3xl">Recent Works</h2>
           </div>
 
           <div>
@@ -281,12 +283,13 @@
           </div>
         </div>
 
-        <div>
-          <figure>
+        <div class="grid gap-y-5 md:grid-cols-12 md:grid-rows-12 md:gap-0">
+          <figure class="md:col-start-1 md:col-end-9 md:row-start-1 md:row-end-11 md:transition-all md:hover:scale-110
+          md:grayscale md:hover:grayscale-0">
             <img src="images/portfolio-1.jpg" alt="" />
           </figure>
 
-          <figure>
+          <figure class="md:col-start-7 md:col-end-1 md:row-start-3 md:-row-end-1 md:transition-transform md:hover:scale-110">
             <img src="images/portfolio-2.jpg" alt="" />
           </figure>
         </div>
