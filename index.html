@@ -404,11 +404,13 @@
         </div>
       </section>
     <!-- *-*-*-*-*-*-*-*-*-*-*-*-* News -->
-      <section>
+      <section class="flex flex-col gap-y-10 bg-primary text-text lg:gap-x-10 lg:flex-row-reverse
+       *:basis-full md:p-16">
         <div>
           <div>
-            <h6>news</h6>
-            <h2>Across the world of Photography</h2>
+            <h6 class="text-sm pl-6 uppercase relative before before:h-1 before:w-4 before:bg-accent 
+              before:top-2/4 before:-translate-y-2/4 before:left-0 lg:text-lg">news</h6>
+            <h2 class="text-2xl capitalize font-bold lg:text-3xl">Across the world of Photography</h2>
           </div>
 
           <p>
@@ -418,34 +420,45 @@
             illo sint animi inventore
           </p>
 
-          <a href="#">View News</a>
+          <a class="uppercase inline-block p-2 border-2 border-accent self-start text-sm rounded
+           sm:text-base sm:px-4" href="#">View News</a>
         </div>
 
-        <div>
-          <div>
-            <figure>
-              <img src="images/news-1.jpg" alt="" />
-            </figure>
-            <h3>Model Photoshoot</h3>
-            <h6>Dec 24, 2027</h6>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia
-              consectetur obcaecati ut nihil placeat.
-            </p>
-            <a href="#"><span>Read More</span> <i></i></a>
+        <div class="grid gap-y-5 sm:grid-cols-2 sm:grid-rows-[min-content] sm:gap-x-5">
+          <div class="grid sm:grid-rows-subgrid sm:row-span-5 gap-y-4 p-4 rounded
+          bg-secondary shadow-lg shadow-primary border-t-2 border-accent">
+              <figure>
+                <img src="images/news-1.jpg" alt="" />
+              </figure>
+              <h3 class="font-bold text-xl">Model Photoshoot</h3>
+              <h6 class="text-accent">Dec 24, 2027</h6>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia
+                consectetur obcaecati ut nihil placeat.
+              </p>
+              <a class="uppercase justify-self-start px-8 py-2 border-2 border-accent self-start rounded
+              flex items-center group lg:text-sm" href="#">
+            <span>Read More</span> <i class="fa-solid fa-angles-right text-accent ml-2 
+              group-hover:translate-x-2 transition-transform"></i>
+            </a>
           </div>
 
-          <div>
+          <div class="grid sm:grid-rows-subgrid sm:row-span-5 gap-y-4 p-4 rounded
+          bg-secondary shadow-lg shadow-primary border-t-2 border-accent">
             <figure>
-              <img src="images/news-2.jpg" alt="" />
+              <img class="object-[65%]" src="images/news-2.jpg" alt="" />
             </figure>
-            <h3>Company Profile</h3>
-            <h6>Jan 24, 2028</h6>
+            <h3 class="font-bold text-xl">Company Profile</h3>
+            <h6 class="text-accent">Jan 24, 2028</h6>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia
               consectetur obcaecati ut nihil placeat.
             </p>
-            <a href="#"><span>Read More</span> <i></i></a>
+            <a class="uppercase justify-self-start px-8 py-2 border-2 border-accent self-start rounded
+              flex items-center group lg:text-sm" href="#">
+            <span>Read More</span> <i class="fa-solid fa-angles-right text-accent ml-2 
+              group-hover:translate-x-2 transition-transform"></i>
+            </a>
           </div>
         </div>
       </section>
